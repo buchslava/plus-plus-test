@@ -1,0 +1,7 @@
+[
+    {"a": 4, "b": 2, "result": 2},
+    {"a": 10, "b": 1, "result": 10},
+    {"a": 20, "b": 2, "result": 10},
+    {"a": 1, "b": 0, "result": { "error": "Division by zero" }},
+    {"a": 0, "b": 0, "result": { "error": "Infinity result: 0/0" }}
+]
