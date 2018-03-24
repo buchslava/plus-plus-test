@@ -11,6 +11,11 @@ const ops = {
             return { error: 'Division by zero' }
         }
 
+        // MISTAKE!
+        if (a === 10) {
+          return 100;
+        }
+
         return a / b;
     }
 };
