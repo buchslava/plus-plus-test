@@ -172,6 +172,8 @@ export const miscNumbers = new DataSuite("misc", "Misc numbers");
 
 ## Test Object Groups
 
+This is an array of `TestObject instances` that answers for following question:
+Which TestObject for what DataSuite with what input fixture should be processed by `++tests`?
 
 ```typescript
 import { oneDigit, twoDigits, miscNumbers } from "./data-suite-registry";
@@ -206,6 +208,8 @@ export const getTestObjectGroups = (): AbstractTestObject[] => [
 ```
 
 ## Assert Pattern
+
+This is
 
 ```typescript
 export abstract class AbstractAssertPattern {

@@ -11,17 +11,24 @@ export abstract class AbstractTestObject {
 
   abstract getRootMethod(): string;
 
+  abstract getInitMethod(): string;
+
   forDataSuite(dataSuite: DataSuite) {
     this.dataSuite = dataSuite;
 
     return this;
   }
 
-  init(initData) {
+  init(initData?) {
     this.initData = initData;
 
     this.object = this.getObject();
-    this.object.init(initData);
+
+    const initMethod = this.getInitMethod();
+
+    if (initMethod) {
+      this.object[initMethod](initData);
+    }
 
     return this;
   }

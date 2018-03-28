@@ -14,4 +14,8 @@ export class Arithmetic2 extends AbstractTestObject {
   getRootMethod(): string {
     return 'go';
   }
+
+  getInitMethod(): string {
+    return 'init';
+  }
 }
